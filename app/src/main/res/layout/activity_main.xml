@@ -9,6 +9,10 @@
         <variable
             name="vm"
             type="com.iteqno.databinding.model.User" />
+        
+        <variable
+            name="mylisteners"
+            type="com.iteqno.databinding.MyClickListeners"/>
     </data>
 
     <LinearLayout
@@ -28,6 +32,13 @@
             android:layout_height="wrap_content"
             android:text="@{vm.email}"
             android:textSize="16sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show toast"
+            android:layout_margin="8dp"
+            android:onClick="@{mylisteners::onShowToast}"/>
     </LinearLayout>
 
 

@@ -10,6 +10,7 @@ import com.iteqno.databinding.model.User;
 public class MainActivity extends AppCompatActivity {
 
     private User user;
+    private MyClickListeners listeners;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,5 +22,8 @@ public class MainActivity extends AppCompatActivity {
         user.setEmail("offiedz@gmail.com");
 
         binding.setVm(user);
+
+        listeners = new MyClickListeners(this);
+        binding.setMylisteners(listeners);
     }
 }
