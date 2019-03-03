@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         user = new User();
-        user.setName("Khofidin");
-        user.setEmail("offiedz@gmail.com");
+        user.name.set("Khofidin");
+        user.email.set("offiedz@gmail.com");
 
         binding.setVm(user);
 

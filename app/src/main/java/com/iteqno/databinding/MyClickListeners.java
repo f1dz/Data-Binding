@@ -16,7 +16,7 @@ public class MyClickListeners {
     }
 
     public void onShowToast(View view) {
-        user.setName("Johny English");
-        user.setEmail("johny@english.com");
+        user.name.set("Johny English");
+        user.email.set("johny@english.com");
     }
 }
