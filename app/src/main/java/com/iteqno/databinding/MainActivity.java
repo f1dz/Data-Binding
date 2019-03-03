@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.setVm(user);
 
-        listeners = new MyClickListeners(this);
+        listeners = new MyClickListeners(this, user);
         binding.setMylisteners(listeners);
     }
 }

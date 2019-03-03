@@ -36,7 +36,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Show toast"
+            android:text="Update UI"
             android:layout_margin="8dp"
             android:onClick="@{mylisteners::onShowToast}"/>
     </LinearLayout>
